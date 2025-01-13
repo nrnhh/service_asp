@@ -1,0 +1,8 @@
+C:\Users\nuran.h\Desktop\service_deskjr\service_deskjr\obj\Debug\net8.0\service_deskjr.csproj.AssemblyReference.cache
+C:\Users\nuran.h\Desktop\service_deskjr\service_deskjr\obj\Debug\net8.0\service_deskjr.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nuran.h\Desktop\service_deskjr\service_deskjr\obj\Debug\net8.0\service_deskjr.AssemblyInfoInputs.cache
+C:\Users\nuran.h\Desktop\service_deskjr\service_deskjr\obj\Debug\net8.0\service_deskjr.AssemblyInfo.cs
+C:\Users\nuran.h\Desktop\service_deskjr\service_deskjr\obj\Debug\net8.0\service_deskjr.csproj.CoreCompileInputs.cache
+C:\Users\nuran.h\Desktop\service_deskjr\service_deskjr\obj\Debug\net8.0\service_deskjr.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nuran.h\Desktop\service_deskjr\service_deskjr\obj\Debug\net8.0\service_deskjr.RazorAssemblyInfo.cache
+C:\Users\nuran.h\Desktop\service_deskjr\service_deskjr\obj\Debug\net8.0\service_deskjr.RazorAssemblyInfo.cs
