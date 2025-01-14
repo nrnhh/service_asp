@@ -8,15 +8,18 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 
+// Configure DbContext with MySQL
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
-        new MySqlServerVersion(new Version(8, 0, 32)) // MySQL sürümünüze göre ayarlayın
+        new MySqlServerVersion(new Version(9, 1, 0)) // MySQL server version
     )
 );
 
-builder.Services.AddDefaultIdentity<User>()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+// Configure Identity
+builder.Services.AddIdentity<User, IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
 
 var app = builder.Build();
 
@@ -24,17 +27,19 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    app.UseHsts();
+    app.UseHsts(); // Adds HTTP Strict Transport Security (HSTS) headers
 }
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
+app.UseHttpsRedirection(); // Redirect HTTP requests to HTTPS
+app.UseStaticFiles(); // Serve static files
 
-app.UseRouting();
+app.UseRouting(); // Enable routing
 
-app.UseAuthentication();
-app.UseAuthorization();
+app.UseAuthentication(); // Add authentication middleware
+app.UseAuthorization(); // Add authorization middleware
 
+// Map Razor Pages and Controllers
 app.MapRazorPages();
+app.MapDefaultControllerRoute();
 
 app.Run();

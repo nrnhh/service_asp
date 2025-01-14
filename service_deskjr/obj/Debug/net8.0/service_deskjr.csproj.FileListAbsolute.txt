@@ -6,3 +6,4 @@ C:\Users\nuran.h\Desktop\service_deskjr\service_deskjr\obj\Debug\net8.0\service_
 C:\Users\nuran.h\Desktop\service_deskjr\service_deskjr\obj\Debug\net8.0\service_deskjr.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\nuran.h\Desktop\service_deskjr\service_deskjr\obj\Debug\net8.0\service_deskjr.RazorAssemblyInfo.cache
 C:\Users\nuran.h\Desktop\service_deskjr\service_deskjr\obj\Debug\net8.0\service_deskjr.RazorAssemblyInfo.cs
+C:\Users\nuran.h\Desktop\service_deskjr\service_deskjr\obj\Debug\net8.0\service_deskjr.sourcelink.json

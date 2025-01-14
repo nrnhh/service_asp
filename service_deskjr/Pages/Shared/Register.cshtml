@@ -1,0 +1,22 @@
+@model service_deskjr.Models.RegisterModel
+
+<h2>Register</h2>
+<form method="post" asp-action="Register" asp-controller="Account">
+    <div>
+        <label asp-for="FullName"></label>
+        <input asp-for="FullName" />
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+    </div>
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" />
+    </div>
+    <div>
+        <label asp-for="ConfirmPassword"></label>
+        <input asp-for="ConfirmPassword" type="password" />
+    </div>
+    <button type="submit">Register</button>
+</form>

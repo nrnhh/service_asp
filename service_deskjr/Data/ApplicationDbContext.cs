@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using service_deskjr.Models; // Modelleri içeren namespace'i ekleyin
+using service_deskjr.Models; 
 
 namespace service_deskjr.Data;
 
@@ -11,6 +11,11 @@ public class ApplicationDbContext : IdentityDbContext<User>
     {
     }
 
-    // Modellerinizi buraya ekleyin
+    
     public DbSet<Ticket> Tickets { get; set; }
+    public DbSet<LoginModel> loginModels    { get; set; }
+     public DbSet<RegisterModel> registerModels    { get; set; }
+
+       public DbSet<User> users    { get; set; }
+
 }

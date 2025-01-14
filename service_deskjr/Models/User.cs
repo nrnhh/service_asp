@@ -3,6 +3,6 @@ using Microsoft.AspNetCore.Identity;
 
 public class User : IdentityUser
 {
-    public string FullName { get; set; }
+    public required string FullName { get; set; }
     public ICollection<Ticket> Tickets { get; set; }
 }
